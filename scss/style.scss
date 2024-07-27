@@ -30,8 +30,8 @@
         --heading-h1-font-size: 50px;
         --heading-h1-line-height: 1.5em;
         --phone-frame-image-width: 500px;
-        --body-main-text-regular-font-size: 25px;
-        --body-main-text-regular-line-height: 1.5em;
+        --body-main-text-regular-font-size: 28px;
+        --body-main-text-regular-line-height: 1.2em;
         --phone-frame-image-translate-x: 0px;
         --phone-frame-image-translate-y: 70px;
     }
@@ -125,13 +125,13 @@ main {
         &__header {
             display: flex;
             justify-content: space-evenly;
-            padding: 40px 0px 0px 0px;
+            padding: 40px 0px 0px 20px;
 
             &__navbar {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                width: 30%;
+                width: 40%;
                 color: var(--neutral-color);
                 font-family: sans-serif;
                 font-size: var(--body-main-text-regular-font-size);
@@ -144,11 +144,11 @@ main {
 
                 &__button {
                     padding: 18px 60px;
-                    border-radius: 17px;
+                    border: none;
+                    border-radius: 20px;
                     background-color: var(--accent-color);
                     color: var(--neutral-color);
-                    border: none;
-                    font-size: 17px;
+                    font-size: var(--body-main-text-regular-font-size);
                 }
             }
 
