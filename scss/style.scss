@@ -36,34 +36,34 @@
         --phone-frame-image-translate-y: -50px;
     }
 
-    @media(max-width: 1200px) {
-        --heading-h1-font-size: 40px;
-        --heading-h1-line-height: 1.4em;
-        --body-main-text-regular-line-height: 1.4em;
-        --phone-frame-image-width: 550px;
-        --phone-frame-image-translate-x: -90px;
-        --phone-frame-image-translate-y: -20px;
+    // @media(max-width: 1200px) {
+    //     --heading-h1-font-size: 40px;
+    //     --heading-h1-line-height: 1.4em;
+    //     --body-main-text-regular-line-height: 1.4em;
+    //     --phone-frame-image-width: 550px;
+    //     --phone-frame-image-translate-x: -90px;
+    //     --phone-frame-image-translate-y: -20px;
 
-    }
+    // }
 
-    @media(max-width: 1000px) {
-        --heading-h1-font-size: 30px;
-        --heading-h1-line-height: 1.3em;
-        --body-main-text-regular-line-height: 1.3em;
-        --phone-frame-image-width: 450px;
-        --phone-frame-image-translate-x: -70px;
-        --phone-frame-image-translate-y: 20px;
-    }
+    // @media(max-width: 1000px) {
+    //     --heading-h1-font-size: 30px;
+    //     --heading-h1-line-height: 1.3em;
+    //     --body-main-text-regular-line-height: 1.3em;
+    //     --phone-frame-image-width: 450px;
+    //     --phone-frame-image-translate-x: -70px;
+    //     --phone-frame-image-translate-y: 20px;
+    // }
 
-    @media(max-width: 800px) {
-        --heading-h1-font-size: 25px;
-        --heading-h1-line-height: 1.2em;
-        --body-main-text-regular-line-height: 1.2em;
-        --phone-frame-image-width: 400px;
-        --phone-frame-image-translate-x: -40px;
-        --phone-frame-image-translate-y: 50px;
+    // @media(max-width: 800px) {
+    //     --heading-h1-font-size: 25px;
+    //     --heading-h1-line-height: 1.2em;
+    //     --body-main-text-regular-line-height: 1.2em;
+    //     --phone-frame-image-width: 400px;
+    //     --phone-frame-image-translate-x: -40px;
+    //     --phone-frame-image-translate-y: 50px;
 
-    }
+    // }
 
     @media(max-width: 600px) {
         --heading-h1-font-size: 20px;
@@ -125,7 +125,7 @@ main {
         &__header {
             display: flex;
             justify-content: space-evenly;
-            padding: 40px 30px 0px 0px;
+            padding: 40px 0px 0px 0px;
 
             &__navbar {
                 display: flex;
