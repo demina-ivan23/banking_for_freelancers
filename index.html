@@ -5,27 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draft</title>
     <link rel="stylesheet" href="scss/reset.css">
     <link rel="stylesheet" href="scss/style.css">
-    <title>Document</title>
 </head>
 
 <body>
-    <main>
-        <section class="hero">
+    <main class="main">
+        <section class="hero" id="hero">
             <div class="hero__header">
                 <div class="hero__header__logo-container">
                     <img src="src/images/logo.png" alt="logo icon" class="hero__header__logo-container__logo">
                 </div>
                 <div class="hero__header__navbar">
                     <div class="hero__header__navbar__item">
-                        <a href="#" class="hero__header__navbar__item__link">Home</a>
+                        <a href="#hero" class="hero__header__navbar__item__link">Home</a>
                     </div>
                     <div class="hero__header__navbar__item">
-                        <a href="#" class="hero__header__navbar__item__link">Feature</a>
+                        <a href="#feature-1" class="hero__header__navbar__item__link">Feature</a>
                     </div>
                     <div class="hero__header__navbar__item">
-                        <a href="#" class="hero__header__navbar__item__link">Pricing</a>
+                        <a href="#pricing" class="hero__header__navbar__item__link">Pricing</a>
                     </div>
                 </div>
                 <div class="hero__header__button-container">
@@ -60,7 +60,7 @@
                 </div>
             </div>
         </section>
-        <section class="feature-1">
+        <section class="feature-1" id="feature-1">
             <div class="feature-1__content">
                 <div class="feature-1__content__left">
                     <div class="feature-1__content__left__header-text">
@@ -146,13 +146,13 @@
                 </div>
             </div>
         </section>
-        <section class="pricing">
+        <section class="pricing" id="pricing">
             <div class="pricing__content">
                 <div class="pricing__content__header">
                     <div class="pricing__content__header__text">
                         An exceptional service,
                         <p class="pricing__content__header__text__accented">
-                           
+
                         </p>
                     </div>
                     <div class="pricing__content__header__subtext">
@@ -160,86 +160,195 @@
                     </div>
                 </div>
                 <div class="pricing__content__main">
-                    <div class="pricing-card">
-                        <div class="pricing-card__header-text">
-                            FREE
-                        </div>
-                        <div class="pricing-card__price-text">
-                            $0 <p class="pricing-card__price-text__per-month">
-                                /m
-                            </p>
-                        </div>
-                        <div class="pricing-card__description-text">
-                            Manage your business with a simple and efficient account
-                        </div>
-                        <div class="pricing-card__button-container">
-                            <button class="--secondary-button-dark-outline">
-                                <div class="--secondary-button-dark-outline__text">
-                                    Get Started
-                                </div>
-                            </button>
-                        </div>
-                        <div class="pricing-card__payment-card-container">
-                            <img src="src/images/credit_card.png" alt=""
-                                class="pricing-card__payment-card-container__payment-card-image">
-                        </div>
+                    <div class="pricing__content__main__card-container">
 
-                        <ul class="pricing-card__advantages-list">
-                            <li>10 free local transfer</li>
-                            <li>Multi-user access</li>
-                            <li>Prepaid debit cards</li>
-                            <li>Virtual cards</li>
-                        </ul>
-                        <ul class="pricing-card__advantages-list-disabeled">
-                            <li>Priority 24/7 support</li>
-                            <li>Exchange 24 currencies</li>
-                            <li>Free payment to other Draft accounts</li>
-                        </ul>
+                        <div class="pricing-card">
+                            <div class="pricing-card__header">
+                                <div class="pricing-card__header__header-text">
+                                    FREE
+                                </div>
+                                <div class="pricing-card__header__price-text">
+                                    $0 <p class="pricing-card__header__price-text__per-month">
+                                        /m
+                                    </p>
+                                </div>
+                                <div class="pricing-card__header__description-text">
+                                    Manage your business with a simple and efficient account
+                                </div>
+                                <div class="pricing-card__header__button-container">
+                                    <button class="--secondary-button-dark-outline">
+                                        Get Started
+                                    </button>
+                                </div>
+                                <div class="pricing-card__header__payment-card-container">
+                                    <img src="src/images/credit_card.png" alt=""
+                                        class="pricing-card__header__payment-card-container__payment-card-image">
+                                </div>
+                            </div>
+
+                            <ul class="pricing-card__advantages-list">
+                                <li>10 free local transfer</li>
+                                <li>Multi-user access</li>
+                                <li>Prepaid debit cards</li>
+                                <li>Virtual cards</li>
+                            </ul>
+                            <ul class="pricing-card__advantages-list-disabeled">
+                                <li>Priority 24/7 support</li>
+                                <li>Exchange 24 currencies</li>
+                                <li>Free payment to other Draft accounts</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="pricing-card">
-                        <div class="pricing-card__header-text">
-                            PREMIUM
-                        </div>
-                        <div class="pricing-card__price-text">
-                            $8 <p class="pricing-card__price-text__per-month">
-                                /m
-                            </p>
-                        </div>
-                        <div class="pricing-card__description-text">
-                            Priority support and multi-user access to maximize your productivity.
-                        </div>
-                        <div class="pricing-card__button-container">
-                            <button class="--secondary-button-dark-outline">
-                                <div class="--secondary-button-dark-outline__text">
-                                    Get Started
-                                </div>
-                            </button>
-                        </div>
-                        <div class="pricing-card__payment-card-container">
-                            <img src="src/images/credit_card.png" alt=""
-                                class="pricing-card__payment-card-container__payment-card-image">
-                        </div>
+                    <div class="pricing__content__main__card-container">
 
-                        <ul class="pricing-card__advantages-list">
-                            <li>10 free local transfer</li>
-                            <li>Multi-user access</li>
-                            <li>Prepaid debit cards</li>
-                            <li>Virtual cards</li>
-                        </ul>
-                        <ul class="pricing-card__advantages-list-accended">
-                            <li>Priority 24/7 support</li>
-                            <li>Exchange 24 currencies</li>
-                            <li>Free payment to other Draft accounts</li>
-                        </ul>
+                        <div class="pricing-card">
+                            <div class="pricing-card__header">
+                                <div class="pricing-card__header__header-text">
+                                    PREMIUM
+                                </div>
+                                <div class="pricing-card__header__price-text">
+                                    $8 <p class="pricing-card__header__price-text__per-month">
+                                        /m
+                                    </p>
+                                </div>
+                                <div class="pricing-card__header__description-text">
+                                    Priority support and multi-user access to maximize your productivity.
+                                </div>
+                                <div class="pricing-card__header__button-container">
+                                    <button class="--secondary-button-dark-outline">
+                                        Get Started
+                                    </button>
+                                </div>
+                                <div class="pricing-card__header__payment-card-container">
+                                    <img src="src/images/credit_card.png" alt=""
+                                        class="pricing-card__header__payment-card-container__payment-card-image">
+                                </div>
+                            </div>
+
+                            <ul class="pricing-card__advantages-list">
+                                <li>10 free local transfer</li>
+                                <li>Multi-user access</li>
+                                <li>Prepaid debit cards</li>
+                                <li>Virtual cards</li>
+                            </ul>
+                            <ul class="pricing-card__advantages-list-accented">
+                                <li>Priority 24/7 support</li>
+                                <li>Exchange 24 currencies</li>
+                                <li>Free payment to other Draft accounts</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="faqs">
+            <div class="faqs__content">
+                <div class="faqs__content__header">
+                    <div class="faqs__content__header__text">
+                        Frequently
+                        <p class="faqs__content__header__text__accented">
 
+                        </p>
+                    </div>
+                    <div class="faqs__content__header__subtext">
+                        If you are not sure whether Draft is suitable is for you or not, do not worry. We are here to
+                        explain everything you might want to know
+                    </div>
+                </div>
+                <div class="faqs__content__main">
+                    <div class="faq-card">
+                        <div class="faq-card__content">
+                            <div class="faq-card__content__text">
+                                What is the difference between Draft and a traditional bank account?
+                            </div>
+                            <div class="faq-card__content__icon-container">
+                                <img src="src/images/plus.png" alt="plus icon"
+                                    class="faq-card__content__icon-container__icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-card">
+                        <div class="faq-card__content">
+                            <div class="faq-card__content__text">
+                                Who can open a Draft account?
+                            </div>
+                            <div class="faq-card__content__icon-container">
+                                <img src="src/images/plus.png" alt="plus icon"
+                                    class="faq-card__content__icon-container__icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-card">
+                        <div class="faq-card__content">
+                            <div class="faq-card__content__text">
+                                What if I withdraw money abroad?
+                            </div>
+                            <div class="faq-card__content__icon-container">
+                                <img src="src/images/plus.png" alt="plus icon"
+                                    class="faq-card__content__icon-container__icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-card">
+                        <div class="faq-card__content">
+                            <div class="faq-card__content__text">
+                                Can I cancel my subscrption or switch to another plan anytime?
+                            </div>
+                            <div class="faq-card__content__icon-container">
+                                <img src="src/images/plus.png" alt="plus icon"
+                                    class="faq-card__content__icon-container__icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-card">
+                        <div class="faq-card__content">
+                            <div class="faq-card__content__text">
+                                What happens if I withdraw more than $250?
+                            </div>
+                            <div class="faq-card__content__icon-container">
+                                <img src="src/images/plus.png" alt="plus icon"
+                                    class="faq-card__content__icon-container__icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="footer">
-
+            <div class="footer__content">
+                <div class="footer__content__left">
+                    <div class="footer__content__left__logo-container">
+                        <img src="src/images/logo.png" alt="logo image"
+                            class="footer__content__left__logo-container__logo">
+                    </div>
+                    <div class="footer__content__left__copyright-text">
+                        Copyright © 2020 Draft LLC.
+                        All rights reserved.
+                    </div>
+                </div>
+                <div class="footer__content__right">
+                    <ul class="footer__content__right__link-list">
+                        <li class="footer__content__right__link-list__list-element"><a href="#"
+                                class="footer__content__right__link-list__list-element__link">Team</a></li>
+                        <li class="footer__content__right__link-list__list-element"><a href="#"
+                                class="footer__content__right__link-list__list-element__link">Services</a></li>
+                        <li class="footer__content__right__link-list__list-element"><a href="#"
+                                class="footer__content__right__link-list__list-element__link">Terms of use</a></li>
+                        <li class="footer__content__right__link-list__list-element"><a href="#"
+                                class="footer__content__right__link-list__list-element__link">Press</a></li>
+                        <li class="footer__content__right__link-list__list-element"><a href="#"
+                                class="footer__content__right__link-list__list-element__link">Projects</a></li>
+                        <li class="footer__content__right__link-list__list-element"><a href="#"
+                                class="footer__content__right__link-list__list-element__link">Privacy policy</a></li>
+                        <li class="footer__content__right__link-list__list-element"><a href="#"
+                                class="footer__content__right__link-list__list-element__link">Fees</a></li>
+                        <li class="footer__content__right__link-list__list-element"><a href="#"
+                                class="footer__content__right__link-list__list-element__link">Affiliate</a></li>
+                        <li class="footer__content__right__link-list__list-element"><a href="#"
+                                class="footer__content__right__link-list__list-element__link">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
 </body>
