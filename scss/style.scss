@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root {
     // COLORS
     --primary-color: #544dde;
@@ -276,7 +277,7 @@ body {
         align-items: center;
         background-color: #ffffff;
         color: var(--secondary-dark-color);
-        font-family: sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-size: var(--caption-text-font-size);
         transition: all 0.3s;
 
@@ -325,7 +326,7 @@ body {
                 justify-content: space-evenly;
                 align-items: center;
                 width: 40%;
-                font-family: sans-serif;
+                font-family: 'Roboto', sans-serif;
                 font-size: var(--body-main-text-regular-font-size);
                 font-weight: 300;
                 z-index: 1;
@@ -383,7 +384,7 @@ body {
 
                     &__text {
                         line-height: var(--heading-h1-line-height);
-                        font-family: sans-serif;
+                        font-family: 'Roboto', sans-serif;
                         font-size: var(--heading-h1-font-size);
                         font-weight: var(--heading-h1-font-weight);
                         color: var(--neutral-color);
@@ -397,7 +398,7 @@ body {
 
                     &__text {
                         line-height: var(--body-main-text-regular-line-height);
-                        font-family: sans-serif;
+                        font-family: 'Roboto', sans-serif;
                         font-size: var(--body-main-text-regular-font-size);
                         color: var(--neutral-color);
                     }
@@ -446,7 +447,7 @@ body {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    font-family: sans-serif;
+                    font-family: 'Roboto', sans-serif;
                     font-size: var(--heading-h2-font-size);
                     font-weight: var(--heading-h2-font-weight);
                     line-height: var(--heading-h2-line-height);
@@ -457,7 +458,7 @@ body {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    font-family: sans-serif;
+                    font-family: 'Roboto', sans-serif;
                     font-size: var(--body-main-text-regular-font-size);
                     font-weight: 100;
                     line-height: var(--body-main-text-regular-line-height);
@@ -474,7 +475,8 @@ body {
                 &__card-image {
                     width: var(--payment-card-image-width);
                     transition: all 0.5s;
-                    &:hover{
+
+                    &:hover {
                         transform: translateX(7px) translateY(-7px);
                     }
                 }
@@ -527,15 +529,16 @@ body {
                         border-radius: var(--card-border-radius);
                         box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
                         transition: all 0.5s;
+
                         &__text-top {
-                            font-family: sans-serif;
+                            font-family: 'Roboto', sans-serif;
                             font-size: var(--body-main-text-regular-font-size);
                             color: #000000;
                             margin-bottom: 20%;
                         }
 
                         &__text-bottom {
-                            font-family: sans-serif;
+                            font-family: 'Roboto', sans-serif;
                             font-size: var(--heading-h3-font-size);
                             font-weight: var(--heading-h3-font-weight);
                             color: var(--primary-color);
@@ -544,7 +547,8 @@ body {
                         @media screen and (max-width: 500px) {
                             padding: 8% 8%;
                         }
-                        &:hover{
+
+                        &:hover {
                             transform: translateX(7px) translateY(-7px);
                             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
                         }
@@ -571,6 +575,7 @@ body {
                         align-items: center;
                         box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
                         transition: all 0.5s;
+
                         &__image {
                             width: 100%;
                         }
@@ -578,7 +583,8 @@ body {
                         @media screen and (max-width: 500px) {
                             min-width: 110%;
                         }
-                        &:hover{
+
+                        &:hover {
                             transform: translateX(7px) translateY(-7px);
                             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
                         }
@@ -595,7 +601,7 @@ body {
                 justify-content: center;
 
                 &__header-text {
-                    font-family: sans-serif;
+                    font-family: 'Roboto', sans-serif;
                     font-size: var(--heading-h2-font-size);
                     font-weight: var(--heading-h2-font-weight);
                     line-height: var(--heading-h2-line-height);
@@ -608,7 +614,7 @@ body {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    font-family: sans-serif;
+                    font-family: 'Roboto', sans-serif;
                     font-size: var(--body-main-text-regular-font-size);
                     font-weight: 100;
                     line-height: var(--body-main-text-regular-line-height);
@@ -640,7 +646,7 @@ body {
                 justify-content: space-evenly;
 
                 &__header-text {
-                    font-family: sans-serif;
+                    font-family: 'Roboto', sans-serif;
                     font-size: var(--heading-h2-font-size);
                     font-weight: var(--heading-h2-font-weight);
                     line-height: var(--heading-h2-line-height);
@@ -649,7 +655,7 @@ body {
 
                 &__main-text {
                     margin-top: 3%;
-                    font-family: sans-serif;
+                    font-family: 'Roboto', sans-serif;
                     font-size: var(--body-main-text-regular-font-size);
                     line-height: var(--body-main-text-regular-line-height);
                     color: var(--secondary-light-color);
@@ -667,7 +673,7 @@ body {
                         display: flex;
                         align-items: center;
                         margin-left: 2.5%;
-                        font-family: sans-serif;
+                        font-family: 'Roboto', sans-serif;
                         font-size: var(--body-main-text-regular-font-size);
                         line-height: var(--body-main-text-regular-line-height);
                         color: var(--secondary-light-color);
@@ -708,7 +714,7 @@ body {
 
                 &__text {
                     display: flex;
-                    font-family: sans-serif;
+                    font-family: 'Roboto', sans-serif;
                     font-size: var(--heading-h3-font-size);
                     font-weight: var(--heading-h3-font-weight);
                     color: var(--primary-color);
@@ -726,7 +732,7 @@ body {
                 &__subtext {
                     text-align: center;
                     margin-top: 3%;
-                    font-family: sans-serif;
+                    font-family: 'Roboto', sans-serif;
                     font-size: var(--intro-text-font-size);
                     color: var(--secondary-dark-color);
                 }
@@ -749,6 +755,7 @@ body {
                         min-width: 75%;
                         max-width: 75%;
                         transition: all 0.5s;
+
                         &__header {
                             display: flex;
                             flex-direction: column;
@@ -757,7 +764,7 @@ body {
                             text-align: center;
 
                             &__header-text {
-                                font-family: sans-serif;
+                                font-family: 'Roboto', sans-serif;
                                 font-size: var(--heading-h3-font-size);
                                 color: #000000;
                             }
@@ -766,7 +773,7 @@ body {
                                 margin-top: 13%;
                                 display: flex;
                                 align-items: flex-end;
-                                font-family: sans-serif;
+                                font-family: 'Roboto', sans-serif;
                                 font-size: var(--heading-h1-font-size);
                                 color: #000000;
 
@@ -778,7 +785,7 @@ body {
                             &__description-text {
                                 margin-top: 15%;
                                 text-align: center;
-                                font-family: sans-serif;
+                                font-family: 'Roboto', sans-serif;
                                 font-size: var(--body-main-text-regular-font-size);
                                 line-height: var(--body-main-text-regular-line-height);
                                 color: var(--secondary-light-color);
@@ -809,7 +816,7 @@ body {
                         }
 
                         &__advantages-list {
-                            font-family: sans-serif;
+                            font-family: 'Roboto', sans-serif;
                             font-size: var(--body-main-text-regular-font-size);
 
                             li {
@@ -825,7 +832,7 @@ body {
                             }
 
                             &-disabeled {
-                                font-family: sans-serif;
+                                font-family: 'Roboto', sans-serif;
                                 font-size: var(--body-main-text-regular-font-size);
                                 color: #B7B7B7;
 
@@ -844,7 +851,7 @@ body {
                             }
 
                             &-accented {
-                                font-family: sans-serif;
+                                font-family: 'Roboto', sans-serif;
                                 font-size: var(--body-main-text-regular-font-size);
                                 color: var(--secondary-dark-color);
 
@@ -882,7 +889,8 @@ body {
                             padding: 10%;
                             border-radius: 20px;
                         }
-                        &:hover{
+
+                        &:hover {
                             transform: translateX(10px) translateY(-10px);
                             box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
                         }
@@ -913,7 +921,7 @@ body {
 
                 &__text {
                     display: flex;
-                    font-family: sans-serif;
+                    font-family: 'Roboto', sans-serif;
                     font-size: var(--heading-h3-font-size);
                     font-weight: var(--heading-h3-font-weight);
                     line-height: var(--heading-h3-line-height);
@@ -931,7 +939,7 @@ body {
                     text-align: center;
                     width: 50%;
                     margin-top: 3%;
-                    font-family: sans-serif;
+                    font-family: 'Roboto', sans-serif;
                     font-size: var(--intro-text-font-size);
                     line-height: var(--body-main-text-regular-line-height);
                     color: var(--secondary-light-color);
@@ -953,6 +961,7 @@ body {
                     width: 85%;
                     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.02);
                     transition: all 0.5s;
+
                     &__content {
                         width: 100%;
                         display: flex;
@@ -960,7 +969,7 @@ body {
                         align-items: center;
 
                         &__text {
-                            font-family: sans-serif;
+                            font-family: 'Roboto', sans-serif;
                             font-size: var(--heading-h4-font-size);
                             font-weight: var(--heading-h4-font-weight);
                             line-height: 1.2em;
@@ -983,10 +992,11 @@ body {
                         width: 95%;
                         padding: 4%;
                     }
-                    &:hover{
-                            transform: translateY(-10px);
-                            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
-                        }
+
+                    &:hover {
+                        transform: translateY(-10px);
+                        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+                    }
                 }
             }
         }
@@ -1020,7 +1030,7 @@ body {
                     max-width: 100%;
                     word-wrap: break-word;
                     margin-top: 10%;
-                    font-family: sans-serif;
+                    font-family: 'Roboto', sans-serif;
                     font-size: var(--body-main-text-regular-font-size);
                     line-height: var(--body-main-text-regular-line-height);
                     color: var(--secondary-light-color);
@@ -1057,12 +1067,13 @@ body {
                         padding: 1%;
 
                         &__link {
-                            font-family: sans-serif;
+                            font-family: 'Roboto', sans-serif;
                             font-size: var(--body-main-text-regular-font-size);
                             line-height: var(--body-main-text-regular-line-height);
                             color: var(--secondary-dark-color);
                             text-decoration: none;
                             transition: all 0.5s;
+
                             &:hover {
                                 color: var(--primary-color) !important;
                             }

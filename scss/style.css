@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
   --primary-color: #544dde;
   --accent-color: #f44e78;
@@ -244,7 +245,7 @@ body {
   align-items: center;
   background-color: #ffffff;
   color: var(--secondary-dark-color);
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: var(--caption-text-font-size);
   transition: all 0.3s;
 }
@@ -291,7 +292,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   width: 40%;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: var(--body-main-text-regular-font-size);
   font-weight: 300;
   z-index: 1;
@@ -338,7 +339,7 @@ body {
 }
 .main .hero__content-wrapper__left-content__header-text-container__text {
   line-height: var(--heading-h1-line-height);
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: var(--heading-h1-font-size);
   font-weight: var(--heading-h1-font-weight);
   color: var(--neutral-color);
@@ -350,7 +351,7 @@ body {
 }
 .main .hero__content-wrapper__left-content__main-text-container__text {
   line-height: var(--body-main-text-regular-line-height);
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: var(--body-main-text-regular-font-size);
   color: var(--neutral-color);
 }
@@ -391,7 +392,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: var(--heading-h2-font-size);
   font-weight: var(--heading-h2-font-weight);
   line-height: var(--heading-h2-line-height);
@@ -401,7 +402,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: var(--body-main-text-regular-font-size);
   font-weight: 100;
   line-height: var(--body-main-text-regular-line-height);
@@ -467,13 +468,13 @@ body {
   transition: all 0.5s;
 }
 .main .feature-2__content__left__top__card__text-top {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: var(--body-main-text-regular-font-size);
   color: #000000;
   margin-bottom: 20%;
 }
 .main .feature-2__content__left__top__card__text-bottom {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: var(--heading-h3-font-size);
   font-weight: var(--heading-h3-font-weight);
   color: var(--primary-color);
@@ -529,7 +530,7 @@ body {
   justify-content: center;
 }
 .main .feature-2__content__right__header-text {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: var(--heading-h2-font-size);
   font-weight: var(--heading-h2-font-weight);
   line-height: var(--heading-h2-line-height);
@@ -540,7 +541,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: var(--body-main-text-regular-font-size);
   font-weight: 100;
   line-height: var(--body-main-text-regular-line-height);
@@ -566,7 +567,7 @@ body {
   justify-content: space-evenly;
 }
 .main .feature-3__content__left__header-text {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: var(--heading-h2-font-size);
   font-weight: var(--heading-h2-font-weight);
   line-height: var(--heading-h2-line-height);
@@ -574,7 +575,7 @@ body {
 }
 .main .feature-3__content__left__main-text {
   margin-top: 3%;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: var(--body-main-text-regular-font-size);
   line-height: var(--body-main-text-regular-line-height);
   color: var(--secondary-light-color);
@@ -590,7 +591,7 @@ body {
   display: flex;
   align-items: center;
   margin-left: 2.5%;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: var(--body-main-text-regular-font-size);
   line-height: var(--body-main-text-regular-line-height);
   color: var(--secondary-light-color);
@@ -625,7 +626,7 @@ body {
 }
 .main .pricing__content__header__text {
   display: flex;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: var(--heading-h3-font-size);
   font-weight: var(--heading-h3-font-weight);
   color: var(--primary-color);
@@ -639,7 +640,7 @@ body {
 .main .pricing__content__header__subtext {
   text-align: center;
   margin-top: 3%;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: var(--intro-text-font-size);
   color: var(--secondary-dark-color);
 }
@@ -669,7 +670,7 @@ body {
   text-align: center;
 }
 .main .pricing__content__main__card-container .pricing-card__header__header-text {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: var(--heading-h3-font-size);
   color: #000000;
 }
@@ -677,7 +678,7 @@ body {
   margin-top: 13%;
   display: flex;
   align-items: flex-end;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: var(--heading-h1-font-size);
   color: #000000;
 }
@@ -687,7 +688,7 @@ body {
 .main .pricing__content__main__card-container .pricing-card__header__description-text {
   margin-top: 15%;
   text-align: center;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: var(--body-main-text-regular-font-size);
   line-height: var(--body-main-text-regular-line-height);
   color: var(--secondary-light-color);
@@ -715,7 +716,7 @@ body {
   }
 }
 .main .pricing__content__main__card-container .pricing-card__advantages-list {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: var(--body-main-text-regular-font-size);
 }
 .main .pricing__content__main__card-container .pricing-card__advantages-list li {
@@ -731,7 +732,7 @@ body {
   }
 }
 .main .pricing__content__main__card-container .pricing-card__advantages-list-disabeled {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: var(--body-main-text-regular-font-size);
   color: #B7B7B7;
 }
@@ -748,7 +749,7 @@ body {
   }
 }
 .main .pricing__content__main__card-container .pricing-card__advantages-list-accented {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: var(--body-main-text-regular-font-size);
   color: var(--secondary-dark-color);
 }
@@ -812,7 +813,7 @@ body {
 }
 .main .faqs__content__header__text {
   display: flex;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: var(--heading-h3-font-size);
   font-weight: var(--heading-h3-font-weight);
   line-height: var(--heading-h3-line-height);
@@ -826,7 +827,7 @@ body {
   text-align: center;
   width: 50%;
   margin-top: 3%;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: var(--intro-text-font-size);
   line-height: var(--body-main-text-regular-line-height);
   color: var(--secondary-light-color);
@@ -854,7 +855,7 @@ body {
   align-items: center;
 }
 .main .faqs__content__main .faq-card__content__text {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: var(--heading-h4-font-size);
   font-weight: var(--heading-h4-font-weight);
   line-height: 1.2em;
@@ -903,7 +904,7 @@ body {
   max-width: 100%;
   word-wrap: break-word;
   margin-top: 10%;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: var(--body-main-text-regular-font-size);
   line-height: var(--body-main-text-regular-line-height);
   color: var(--secondary-light-color);
@@ -937,7 +938,7 @@ body {
   padding: 1%;
 }
 .main .footer__content__right__link-list__list-element__link {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: var(--body-main-text-regular-font-size);
   line-height: var(--body-main-text-regular-line-height);
   color: var(--secondary-dark-color);
