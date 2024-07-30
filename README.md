@@ -1,0 +1,1 @@
+SCSS & HTML skills showcase project. Thanks Sukhbir Singh (aka @Sukhmahey) for the design.
