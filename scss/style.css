@@ -1,12 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
-  --primary-color: #544dde;
-  --accent-color: #f44e78;
-  --neutral-color: #f2f6ff;
-  --stroke-color: #cad6f1;
-  --secondary-light-color: #6a6d9e;
-  --secondary-dark-color: #16194f;
   --heading-h1-font-size: 60px;
   --heading-h1-font-weight: 700;
   --heading-h1-line-height: 1.6em;
@@ -198,6 +192,10 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+html.no-scroll {
+  overflow: hidden;
 }
 
 *,
@@ -214,10 +212,32 @@ body {
 }
 
 .main {
-  background-color: var(--neutral-color);
+  transition: all 0.3s ease;
+  --primary-color: #544dde;
+  --accent-color: #f44e78;
+  --background-color: #f2f6ff;
+  --neutral-color: #f2f6ff;
+  --stroke-color: #cad6f1;
+  --footer-color: #dce2f0;
+  --secondary-light-color: #6a6d9e;
+  --secondary-dark-color: #16194f;
+  --card-bg-color: #ffffff;
+  --text-color: #000000;
+  --disabeled-text-color: #b7b7b7;
+  background-color: var(--background-color);
   position: relative;
 }
-.main .--secondary-button-dark {
+.main.dark-theme {
+  --background-color: #111112;
+  --stroke-color: #51545b;
+  --footer-color: #26272a;
+  --secondary-light-color: #6a6d9e;
+  --secondary-dark-color: #3339ac;
+  --card-bg-color: #221f1f;
+  --text-color: #ffffff;
+  --disabeled-text-color: #767474;
+}
+.main .secondary-button-dark {
   background-color: var(--secondary-dark-color);
   width: var(--secondary-button-dark-width);
   height: var(--secondary-button-dark-height);
@@ -228,14 +248,14 @@ body {
   align-items: center;
   transition: all 0.5s;
 }
-.main .--secondary-button-dark__image {
+.main .secondary-button-dark__image {
   width: var(--secondary-button-dark-image-width);
   height: auto;
 }
-.main .--secondary-button-dark:hover {
+.main .secondary-button-dark:hover {
   transform: translateX(5px) translateY(-5px);
 }
-.main .--secondary-button-dark-outline {
+.main .secondary-button-dark--outline {
   border: 2px solid var(--secondary-dark-color);
   width: var(--secondary-button-dark-width);
   height: var(--secondary-button-dark-height);
@@ -243,15 +263,160 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff;
+  background-color: var(--card-bg-color);
   color: var(--secondary-dark-color);
   font-family: "Roboto", sans-serif;
   font-size: var(--caption-text-font-size);
   transition: all 0.3s;
 }
-.main .--secondary-button-dark-outline:hover {
+.main .secondary-button-dark--outline:hover {
   background-color: var(--secondary-dark-color);
   color: var(--neutral-color);
+}
+.main #registerAlertContainer {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 17, 18, 0.6823529412);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+.main #registerAlertContainer.hidden {
+  overflow: hidden;
+  z-index: -1;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.main #registerAlertContainer .register-alert {
+  position: relative;
+  width: 35%;
+  height: auto;
+  background-color: var(--background-color);
+  opacity: 1;
+  border: 2px solid var(--primary-color);
+  font-family: "Roboto", sans-serif;
+  border-radius: 30px;
+  color: var(--text-color);
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+@media screen and (max-height: 670px) {
+  .main #registerAlertContainer .register-alert {
+    height: 90%;
+  }
+}
+.main #registerAlertContainer .register-alert__content__header {
+  margin-top: 7%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: var(--heading-h3-font-size);
+}
+.main #registerAlertContainer .register-alert__content__form {
+  margin-top: 5%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+}
+.main #registerAlertContainer .register-alert__content__form__link-div {
+  display: flex;
+  justify-content: center;
+  font-size: var(--body-main-text-regular-font-size);
+}
+.main #registerAlertContainer .register-alert__content__form__link-div__link {
+  margin-left: 1%;
+  color: var(--secondary-light-color);
+  transition: all 0.3s ease;
+}
+.main #registerAlertContainer .register-alert__content__form__link-div__link:hover {
+  color: var(--secondary-dark-color);
+}
+.main #registerAlertContainer .register-alert__content__form__inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main #registerAlertContainer .register-alert__content__form__inputs__input-group {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.main #registerAlertContainer .register-alert__content__form__inputs__input-group__label {
+  font-size: var(--body-main-text-regular-font-size);
+}
+.main #registerAlertContainer .register-alert__content__form__inputs__input-group__input {
+  margin-top: 3%;
+  width: 85%;
+  padding: 3% 2%;
+  font-size: var(--body-main-text-regular-font-size);
+  border-radius: 10px;
+  border: 1px solid var(--stroke-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+.main #registerAlertContainer .register-alert__content__form__submit {
+  margin: 5% 10% 5% 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.main #registerAlertContainer .register-alert__content__form__submit__input {
+  padding: 2% 5%;
+  font-size: var(--body-main-text-regular-font-size);
+  border: none;
+  border-radius: 10px;
+  background-color: var(--secondary-dark-color);
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+.main #registerAlertContainer .register-alert__content__form__submit__input:hover {
+  background-color: var(--accent-color);
+}
+@media screen and (max-width: 1400px) {
+  .main #registerAlertContainer .register-alert {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .main #registerAlertContainer .register-alert {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .main #registerAlertContainer .register-alert {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .main #registerAlertContainer .register-alert {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main #registerAlertContainer .register-alert {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main #registerAlertContainer .register-alert {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .main #registerAlertContainer .register-alert {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .main #registerAlertContainer .register-alert {
+    width: 80%;
+  }
 }
 .main .hero {
   position: relative;
@@ -277,15 +442,24 @@ body {
   padding: 40px 0px 0px 20px;
   max-width: 100%;
 }
-.main .hero__header__logo-container {
+.main .hero__header #themeToggleButton {
+  border-radius: 100%;
+  width: 4%;
+  height: 4%;
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.main .hero__header__logo-container__logo {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  width: var(--logo-width);
+.main .hero__header #themeToggleButton .theme-image {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 600px) {
+  .main .hero__header #themeToggleButton {
+    width: 6%;
+    height: 6%;
+  }
 }
 .main .hero__header__navbar {
   display: flex;
@@ -461,7 +635,7 @@ body {
   justify-content: space-evenly;
   padding: 8% 11%;
   margin: 2%;
-  background-color: #ffffff;
+  background-color: var(--card-bg-color);
   border: 1px solid var(--stroke-color);
   border-radius: var(--card-border-radius);
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
@@ -470,7 +644,7 @@ body {
 .main .feature-2__content__left__top__card__text-top {
   font-family: "Roboto", sans-serif;
   font-size: var(--body-main-text-regular-font-size);
-  color: #000000;
+  color: var(--text-color);
   margin-bottom: 20%;
 }
 .main .feature-2__content__left__top__card__text-bottom {
@@ -500,7 +674,7 @@ body {
 .main .feature-2__content__left__bottom__chart-card {
   width: 100%;
   padding: 6.5% 10%;
-  background-color: #ffffff;
+  background-color: var(--card-bg-color);
   border: 1px solid var(--stroke-color);
   border-radius: var(--card-border-radius);
   display: flex;
@@ -656,7 +830,7 @@ body {
   border: 0.5px solid var(--stroke-color);
   padding: 8%;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
-  background-color: #ffffff;
+  background-color: var(--card-bg-color);
   border-radius: 50px;
   min-width: 75%;
   max-width: 75%;
@@ -672,7 +846,7 @@ body {
 .main .pricing__content__main__card-container .pricing-card__header__header-text {
   font-family: "Roboto", sans-serif;
   font-size: var(--heading-h3-font-size);
-  color: #000000;
+  color: var(--text-color);
 }
 .main .pricing__content__main__card-container .pricing-card__header__price-text {
   margin-top: 13%;
@@ -680,7 +854,7 @@ body {
   align-items: flex-end;
   font-family: "Roboto", sans-serif;
   font-size: var(--heading-h1-font-size);
-  color: #000000;
+  color: var(--text-color);
 }
 .main .pricing__content__main__card-container .pricing-card__header__price-text__per-month {
   font-size: var(--heading-h3-font-size);
@@ -718,6 +892,7 @@ body {
 .main .pricing__content__main__card-container .pricing-card__advantages-list {
   font-family: "Roboto", sans-serif;
   font-size: var(--body-main-text-regular-font-size);
+  color: var(--text-color);
 }
 .main .pricing__content__main__card-container .pricing-card__advantages-list li {
   background-image: url("../src/images/check.png");
@@ -734,7 +909,7 @@ body {
 .main .pricing__content__main__card-container .pricing-card__advantages-list-disabeled {
   font-family: "Roboto", sans-serif;
   font-size: var(--body-main-text-regular-font-size);
-  color: #B7B7B7;
+  color: var(--disabeled-text-color);
 }
 .main .pricing__content__main__card-container .pricing-card__advantages-list-disabeled li {
   background-image: url("../src/images/disabled-check.png");
@@ -840,47 +1015,79 @@ body {
 }
 .main .faqs__content__main .faq-card {
   margin-top: 2%;
-  background-color: #ffffff;
+  width: 85%;
+  border-radius: 22px;
+  background-color: var(--card-bg-color);
   border: 0.2px solid var(--stroke-color);
+  transition: all 0.5s ease;
+}
+.main .faqs__content__main .faq-card__question {
   border-radius: 22px;
   padding: 2.5%;
-  width: 85%;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.02);
-  transition: all 0.5s;
+  transition: all 0.4s ease;
 }
-.main .faqs__content__main .faq-card__content {
+.main .faqs__content__main .faq-card__question.answered {
+  border-radius: 22px 22px 0 0;
+  border-bottom: 1px solid var(--stroke-color);
+  box-shadow: none;
+  transition: all 0.4s ease;
+}
+.main .faqs__content__main .faq-card__question__content {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.main .faqs__content__main .faq-card__content__text {
+.main .faqs__content__main .faq-card__question__content__text {
   font-family: "Roboto", sans-serif;
   font-size: var(--heading-h4-font-size);
   font-weight: var(--heading-h4-font-weight);
   line-height: 1.2em;
   color: var(--secondary-dark-color);
 }
-.main .faqs__content__main .faq-card__content__icon-container {
+.main .faqs__content__main .faq-card__question__content__icon-container {
   width: 4%;
 }
-.main .faqs__content__main .faq-card__content__icon-container__icon {
+.main .faqs__content__main .faq-card__question__content__icon-container__icon {
   width: var(--plus-icon-width);
   height: auto;
 }
 @media screen and (max-width: 800px) {
-  .main .faqs__content__main .faq-card {
+  .main .faqs__content__main .faq-card__question {
     border-radius: 15px;
     width: 95%;
     padding: 4%;
   }
+}
+.main .faqs__content__main .faq-card__answer {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.4s ease, padding 0.4s ease;
+}
+.main .faqs__content__main .faq-card__answer__text {
+  padding: 0 3%;
+  font-family: "Roboto", sans-serif;
+  font-size: var(--body-main-text-regular-font-size);
+  line-height: 150%;
+  color: var(--secondary-light-color);
+  opacity: 0;
+  transition: opacity 0.1s ease;
+}
+.main .faqs__content__main .faq-card__answer.opened {
+  height: auto;
+  padding: 3%;
+}
+.main .faqs__content__main .faq-card__answer.opened .faq-card__answer__text {
+  opacity: 1;
+  transition: opacity 0.4s ease 0.3s;
 }
 .main .faqs__content__main .faq-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
 .main .footer {
-  background-color: #dce2f0;
+  background-color: var(--footer-color);
   display: flex;
   justify-content: center;
   align-items: center;

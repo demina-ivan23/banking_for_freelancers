@@ -12,10 +12,48 @@
 
 <body>
     <main class="main">
+        <div id="registerAlertContainer" class="hidden">
+            <div class="register-alert">
+                <div class="register-alert__content__header">Sign up for Draft today</div>
+                <form action="" class="register-alert__content__form">
+                    <div class="register-alert__content__form__link-div">
+                        Already have an account? <a href="#" class="register-alert__content__form__link-div__link">Sign in</a>
+                    </div>
+                    <div class="register-alert__content__form__inputs">
+                        <div class="register-alert__content__form__inputs__input-group">
+                            <label for="email" class="register-alert__content__form__inputs__input-group__label">Email</label>
+                            <input type="text" class="register-alert__content__form__inputs__input-group__input" name="email"
+                                placeholder="Enter your email">
+                        </div>
+                        <div class="register-alert__content__form__inputs__input-group">
+                            <label for="username"
+                                class="register-alert__content__form__inputs__input-group__label">Username</label>
+                            <input type="text" class="register-alert__content__form__inputs__input-group__input" name="username"
+                                placeholder="Create a username">
+                        </div>
+                        <div class="register-alert__content__form__inputs__input-group">
+                            <label for="password"
+                                class="register-alert__content__form__inputs__input-group__label">Password</label>
+                            <input type="password" class="register-alert__content__form__inputs__input-group__input"
+                                name="password" placeholder="Create a password">
+                        </div>
+                        <div class="register-alert__content__form__inputs__input-group">
+                            <label for="password-confirm"
+                                class="register-alert__content__form__inputs__input-group__label">Password Confirmation</label>
+                            <input type="password" class="register-alert__content__form__inputs__input-group__input"
+                                name="password-confirm" placeholder="Confirm password">
+                        </div>
+                    </div>
+                    <div class="register-alert__content__form__submit">
+                        <input type="submit" class="register-alert__content__form__submit__input" value="Register">
+                    </div>
+                </form>
+            </div>
+        </div>
         <section class="hero" id="hero">
             <div class="hero__header">
-                <div class="hero__header__logo-container">
-                    <img src="src/images/logo.png" alt="logo icon" class="hero__header__logo-container__logo">
+                <div id="themeToggleButton">
+                    <img src="src/images/theme.png" class="theme-image" alt="">
                 </div>
                 <div class="hero__header__navbar">
                     <div class="hero__header__navbar__item">
@@ -29,7 +67,8 @@
                     </div>
                 </div>
                 <div class="hero__header__button-container">
-                    <input type="button" class="hero__header__button-container__button" value="Sign Up">
+                    <input type="button" class="hero__header__button-container__button" name="alertButton"
+                        value="Sign Up">
                 </div>
             </div>
             <div class="hero__content-wrapper">
@@ -48,8 +87,8 @@
                         </div>
                     </div>
                     <div class="hero__content-wrapper__left-content__button-container">
-                        <button class="--secondary-button-dark">
-                            <img src="src/images/register_button_bg.png" alt="" class="--secondary-button-dark__image">
+                        <button class="secondary-button-dark" name="alertButton">
+                            <img src="src/images/register_button_bg.png" alt="" class="secondary-button-dark__image">
                         </button>
                     </div>
 
@@ -115,9 +154,8 @@
                         you stand.
                     </div>
                     <div class="feature-2__content__right__button-container">
-                        <button class="--secondary-button-dark">
-                            <img src="src/images/learn_more_button_bg.png" alt=""
-                                class="--secondary-button-dark__image">
+                        <button class="secondary-button-dark" name="alertButton">
+                            <img src="src/images/learn_more_button_bg.png" alt="" class="secondary-button-dark__image">
                         </button>
                     </div>
                 </div>
@@ -176,7 +214,7 @@
                                     Manage your business with a simple and efficient account
                                 </div>
                                 <div class="pricing-card__header__button-container">
-                                    <button class="--secondary-button-dark-outline">
+                                    <button class="secondary-button-dark--outline" name="alertButton">
                                         Get Started
                                     </button>
                                 </div>
@@ -215,7 +253,7 @@
                                     Priority support and multi-user access to maximize your productivity.
                                 </div>
                                 <div class="pricing-card__header__button-container">
-                                    <button class="--secondary-button-dark-outline">
+                                    <button class="secondary-button-dark--outline" name="alertButton">
                                         Get Started
                                     </button>
                                 </div>
@@ -257,57 +295,102 @@
                 </div>
                 <div class="faqs__content__main">
                     <div class="faq-card">
-                        <div class="faq-card__content">
-                            <div class="faq-card__content__text">
-                                What is the difference between Draft and a traditional bank account?
+                        <div class="faq-card__question">
+                            <div class="faq-card__question__content">
+                                <div class="faq-card__question__content__text">
+                                    What is the difference between Draft and a traditional bank account?
+                                </div>
+                                <div class="faq-card__question__content__icon-container">
+                                    <img src="src/images/plus.png" alt="plus icon"
+                                        class="faq-card__question__content__icon-container__icon">
+                                </div>
                             </div>
-                            <div class="faq-card__content__icon-container">
-                                <img src="src/images/plus.png" alt="plus icon"
-                                    class="faq-card__content__icon-container__icon">
+                        </div>
+                        <div class="faq-card__answer">
+                            <div class="faq-card__answer__text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi tempora corrupti,
+                                eligendi vel quae voluptate assumenda quam, iure consequuntur iusto omnis! Excepturi,
+                                iste commodi perferendis libero voluptas dicta corrupti facilis.
                             </div>
                         </div>
                     </div>
                     <div class="faq-card">
-                        <div class="faq-card__content">
-                            <div class="faq-card__content__text">
-                                Who can open a Draft account?
+                        <div class="faq-card__question">
+                            <div class="faq-card__question__content">
+                                <div class="faq-card__question__content__text">
+                                    Who can open a Draft account?
+                                </div>
+                                <div class="faq-card__question__content__icon-container">
+                                    <img src="src/images/plus.png" alt="plus icon"
+                                        class="faq-card__question__content__icon-container__icon">
+                                </div>
                             </div>
-                            <div class="faq-card__content__icon-container">
-                                <img src="src/images/plus.png" alt="plus icon"
-                                    class="faq-card__content__icon-container__icon">
+                        </div>
+                        <div class="faq-card__answer">
+                            <div class="faq-card__answer__text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi tempora corrupti,
+                                eligendi vel quae voluptate assumenda quam, iure consequuntur iusto omnis! Excepturi,
+                                iste commodi perferendis libero voluptas dicta corrupti facilis.
                             </div>
                         </div>
                     </div>
                     <div class="faq-card">
-                        <div class="faq-card__content">
-                            <div class="faq-card__content__text">
-                                What if I withdraw money abroad?
+                        <div class="faq-card__question">
+                            <div class="faq-card__question__content">
+                                <div class="faq-card__question__content__text">
+                                    What if I withdraw money abroad?
+                                </div>
+                                <div class="faq-card__question__content__icon-container">
+                                    <img src="src/images/plus.png" alt="plus icon"
+                                        class="faq-card__question__content__icon-container__icon">
+                                </div>
                             </div>
-                            <div class="faq-card__content__icon-container">
-                                <img src="src/images/plus.png" alt="plus icon"
-                                    class="faq-card__content__icon-container__icon">
+                        </div>
+                        <div class="faq-card__answer">
+                            <div class="faq-card__answer__text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi tempora corrupti,
+                                eligendi vel quae voluptate assumenda quam, iure consequuntur iusto omnis! Excepturi,
+                                iste commodi perferendis libero voluptas dicta corrupti facilis.
                             </div>
                         </div>
                     </div>
                     <div class="faq-card">
-                        <div class="faq-card__content">
-                            <div class="faq-card__content__text">
-                                Can I cancel my subscrption or switch to another plan anytime?
+                        <div class="faq-card__question">
+                            <div class="faq-card__question__content">
+                                <div class="faq-card__question__content__text">
+                                    Can I cancel my subscrption or switch to another plan anytime?
+                                </div>
+                                <div class="faq-card__question__content__icon-container">
+                                    <img src="src/images/plus.png" alt="plus icon"
+                                        class="faq-card__question__content__icon-container__icon">
+                                </div>
                             </div>
-                            <div class="faq-card__content__icon-container">
-                                <img src="src/images/plus.png" alt="plus icon"
-                                    class="faq-card__content__icon-container__icon">
+                        </div>
+                        <div class="faq-card__answer">
+                            <div class="faq-card__answer__text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi tempora corrupti,
+                                eligendi vel quae voluptate assumenda quam, iure consequuntur iusto omnis! Excepturi,
+                                iste commodi perferendis libero voluptas dicta corrupti facilis.
                             </div>
                         </div>
                     </div>
                     <div class="faq-card">
-                        <div class="faq-card__content">
-                            <div class="faq-card__content__text">
-                                What happens if I withdraw more than $250?
+                        <div class="faq-card__question">
+                            <div class="faq-card__question__content">
+                                <div class="faq-card__question__content__text">
+                                    What happens if I withdraw more than $250?
+                                </div>
+                                <div class="faq-card__question__content__icon-container">
+                                    <img src="src/images/plus.png" alt="plus icon"
+                                        class="faq-card__question__content__icon-container__icon">
+                                </div>
                             </div>
-                            <div class="faq-card__content__icon-container">
-                                <img src="src/images/plus.png" alt="plus icon"
-                                    class="faq-card__content__icon-container__icon">
+                        </div>
+                        <div class="faq-card__answer">
+                            <div class="faq-card__answer__text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi tempora corrupti,
+                                eligendi vel quae voluptate assumenda quam, iure consequuntur iusto omnis! Excepturi,
+                                iste commodi perferendis libero voluptas dicta corrupti facilis.
                             </div>
                         </div>
                     </div>
@@ -351,6 +434,7 @@
             </div>
         </section>
     </main>
+    <script src="/js/index.js"></script>
 </body>
 
 </html>
