@@ -16,7 +16,7 @@ const listenToAccordions = () => {
                 answerElement.previousElementSibling.classList.remove('answered');
             }
             document.querySelectorAll('.faq-card__question__content__icon-container__icon').forEach(button => {
-                button.src = '../src/images/plus.png';
+                button.src = 'src/images/plus.png';
             });
         });
         answer.classList.toggle('opened');
