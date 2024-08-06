@@ -21,7 +21,7 @@ const listenToAccordions = () => {
         });
         answer.classList.toggle('opened');
         question.classList.toggle('answered')
-        answer.classList.contains('opened') ? button.src = '../src/images/minus.png' : button.src = '../src/images/plus.png';
+        answer.classList.contains('opened') ? button.src = 'src/images/minus.png' : button.src = 'src/images/plus.png';
     }
 }
 const listenToThemeToggle = () => {
