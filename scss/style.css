@@ -305,7 +305,7 @@ body {
   overflow-y: scroll;
   scrollbar-width: none;
 }
-@media screen and (max-height: 670px) and (min-width: 1000px) {
+@media screen and (max-height: 670px) {
   .main #registerAlertContainer .register-alert {
     height: 90%;
   }
